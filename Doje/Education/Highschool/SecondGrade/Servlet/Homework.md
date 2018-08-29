@@ -7,6 +7,7 @@
 고객 정보(아이디,PASSWORD)를 입력받음 -> 서블릿에서 고객정보를 DTO에 전송 -> 전송된 정보를 DB에 저장함 -> DAO가 DB 연동 ->
 JSP로 로그인 실행 화면 또는 실패 화면을 출력
 
+~~~java
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	String id=request.getParameter("id");
 	String pwd=request.getParameter("pwd");
@@ -28,6 +29,7 @@ JSP로 로그인 실행 화면 또는 실패 화면을 출력
 		}
 	}
 }
+~~~
 
 
 
